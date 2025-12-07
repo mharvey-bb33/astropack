@@ -29,3 +29,5 @@ Suggests:
     rmarkdown,
     devtools
 VignetteBuilder: knitr
+URL: https://github.com/mharvey-bb33/astropack
+BugReports: https://github.com/mharvey-bb33/astropack/issues
