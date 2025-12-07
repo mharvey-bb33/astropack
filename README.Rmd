@@ -1,0 +1,46 @@
+# astropack
+
+**astropack** is an R package designed to provide a collection of astrology-related computational and informative tools. 
+The package supports zodiac sign determination, moon phase classification, horoscope retrieval, and 
+Mercury retrograde date checks. It also includes structured data sets containing horoscope text, 
+retrograde periods (2016–2030), lunar phase interpretations, and zodiac sign profiles.
+
+This package is intended for users interested in astrology-oriented data exploration, metaphysical research, and its integration into analytical and statistical programs.
+
+---
+
+## Key Functions
+
+| `get_sign()` | Identifies zodiac sign using month and day inputs
+| `element()` | Classifies elemental association (Air, Earth, Fire, Water)
+| `modality()` | Classifies modality (Cardinal, Fixed, Mutable)
+| `sign_profile()` | Provides zodiac characteristics
+| `moon_phase()` | Calculates lunar phases and provides guidance
+| `next_full_moon()` | Predicts the date of the next full moon from date input
+| `get_horoscope()` | Retrieves a horoscope by sign and category
+| `is_retrograde()` | Determines if a date falls within Mercury retrograde
+
+---
+
+## Installation
+
+```r
+# Development installation (local source)
+devtools::load_all()
+
+# To install using Github:
+devtools::install_github("mharvey-bb33/astropack")
+
+# To install using Github (with vignettes)
+devtools::install_github("mharvey-bb33/astropack", build_vignettes = TRUE)
+```
+
+## Bugs
+
+To report any bugs found within the code, please refer to the DESCRIPTION for contact information.
+
+## License
+
+Licensed under the MIT License. See LICENSE file for full terms.
+
+© 2025 Makayla Harvey. All rights reserved.

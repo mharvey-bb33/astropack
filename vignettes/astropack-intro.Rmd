@@ -1,0 +1,106 @@
+---
+title: "astropack"
+author: Makayla Harvey
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{astropack-intro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+# If local development:
+devtools::load_all()
+```
+
+## Welcome to astropack!
+
+This package is a astro-themed utility package that is meant to be paired with other datasets (or explored on its own) for Zodiacal research. It provides zodiac lookup, moon phase tracking, horoscope retrieval, and retrograde detection.
+
+### Data Attribution
+The Horoscope texts for get_horoscope were sourced from Horoscope.com.  
+The Retrograde date ranges adapted from publicly available astrology calendars (Susan 
+Miller's Astrology).  
+The zodiac profile descriptions were compiled from general astrological material.
+
+
+### Core Functions of astropack
+
+### 1. element()
+Retrieve zodiac element:
+```{r setup}
+element("Aries")
+element("scorpio")
+
+```
+
+### 2. get_horoscope()
+Get a horscope for a zodiac sign:
+```{r}
+get_horoscope("Cancer")
+
+```
+
+### 3. get_sign()
+Determine a zodiac sign using month/day (m/d):
+```{r}
+get_sign(6,3)
+get_sign(9,5)
+
+```
+
+### 4. is_retrograde()
+Check whether or not Mercury is in Retrograde (2016 - 2030 data: 
+```{r}
+is_retrograde()
+is_retrograde("2027-7-3")
+
+```
+
+### 5. modality()
+Retrieve zodiac modality:
+```{r}
+modality("libra")
+modality("Leo")
+
+```
+
+### 6. moon_phase()
+Check any date's moon phase:
+```{r}
+moon_phase()
+moon_phase("2029-3-11")
+
+```
+
+
+### 7.next_full_moon()
+Check when the next full moon will occur with any date:
+```{r}
+next_full_moon()
+next_full_moon("2026-8-11")
+
+```
+
+### 8.sign_profile()
+Returns a zodiac's strengths, weaknesses, symbol, element & modality:
+```{r}
+sign_profile("Gemini")
+sign_profile("aquarius")
+
+```
+
+This package can be further expanded on by:
+Making a birth chart tool that can calculate charts and store them into a database
+This package can be further expanded on by:
+
+1. Making a birth chart calculator with chart storage  
+2. Creating a lunar hair calendar for best haircut dates  
+3. Adding a planetary transit calendar for tracking planets by date  
+
+  ...and much more! Thank you for using the astropack!

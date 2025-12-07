@@ -1,0 +1,31 @@
+Package: astropack
+Type: Package
+Title: Astrology Utility Toolkit for Zodiac, Moon Phases, and Retrogrades
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Makayla", "Harvey",
+      email = "mharvey33332@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: This package contains a collection of astrology-based R utilities that provide zodiac sign lookup, 
+    horoscope retrieval, moon phase advice, and Mercury retrograde detection. 
+    This packase also includes data sources from Horscopes.com (for horoscopes),
+    Susan Miller's mercury retrograde calendar (2016-2030), and zodiac trait definitions from common astrological references.
+    This package is built for research, spiritual planning, and teaching purposes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 3.5)
+RoxygenNote: 7.3.3
+Imports: 
+  dplyr,
+  lubridate,
+  lunar
+Suggests: 
+    knitr,
+    rmarkdown,
+    devtools
+VignetteBuilder: knitr
